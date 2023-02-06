@@ -1,0 +1,34 @@
+{
+  "name": "kepmon",
+  "version": "0.1.0",
+  "description": "A Napi library wich provides a control over the pointer",
+  "main": "dist/src/index.js",
+  "contributors": [
+    {
+      "name": "Ahmet Cavus",
+      "url": "https://github.com/AhmetCavus"
+    }
+  ],
+  "keywords": [
+    "Keep",
+    "Me",
+    "On",
+    "Screen",
+    "Mouse",
+    "Movement",
+    "Cursor",
+    "Pointer",
+    "Left Click",
+    "Right Click"
+  ],
+  "author": "yapptek",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^5.1.0",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.19"
+  }
+}
