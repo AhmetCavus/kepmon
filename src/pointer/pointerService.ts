@@ -13,6 +13,7 @@ export interface PointerService {
     getPointerBoundary: () => PointerBoundary
     setPointerPosition: (x: number, y: number) => void
     setPointerInput: (inputType: TypeOfInput) => void
+    sayHello: (name: String) => String
 }
 
 export enum TypeOfInput {

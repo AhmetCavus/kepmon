@@ -6,10 +6,6 @@ In the earliest version only the Windows platfrom is currently supported!
 
 ## Getting Started
 
-### Installation
-
-`npm i kepmon`
-
 ### Usage
 
 ```nodejs
@@ -42,7 +38,6 @@ You can install node-gyp globally with the following command:
 
 `
 npm install -g node-gyp
-Building a native module with node-gyp
 `
 
 Once you have node-gyp installed, you can generate the necessary code with the code below
@@ -57,6 +52,16 @@ and than
 `
 node-gyp rebuild
 `
+
+After that you'll get the `pointerService.node` file which is used for performing the hardware executions.
+So execute now 
+
+`npm i`
+
+in order to install required node modules. 
+
+The [binding](node_modules/bindings/README.md) module maps the cpp code through the exposed interface -> see [PointerService](src/pointer/pointerService.ts)
+and binds it to the generated `node` file located in the binary directory. 
 
 For further instruction on how to use node-gyp and napi properly you can follow the (documentation)[https://nodejs.org/api/n-api.html] 
 

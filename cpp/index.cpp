@@ -38,6 +38,13 @@ Napi::Boolean SetPointerPosition(const Napi::CallbackInfo& info) {
 	return Napi::Boolean::New(env, service->SetPointerPos(PointerPos(x, y)));
 }
 
+Napi::String SayHello(const Napi::CallbackInfo& info) {
+	Napi::Env env = info.Env();
+	std::string name = info[0].ToString();
+
+	return Napi::String::New(env, "Hello " + name);
+}
+
 void SendPointerInput(const Napi::CallbackInfo& info) {
 	Napi::Env env = info.Env();
 	Napi::Number typeOfIntput = info[0].ToNumber();
@@ -84,6 +91,11 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
 	exports.Set(
 		Napi::String::New(env, "setPointerInput"),
 		Napi::Function::New(env, SendPointerInput)
+	);
+
+	exports.Set(
+		Napi::String::New(env, "sayHello"),
+		Napi::Function::New(env, SayHello)
 	);
 
 	return exports;

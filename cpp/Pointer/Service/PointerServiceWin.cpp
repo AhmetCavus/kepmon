@@ -3,7 +3,18 @@
 
 #if defined(_WIN32)
 
-#include <windows.h>
+//  global compilation flag configuring windows sdk headers
+//  preventing inclusion of min and max macros clashing with <limits>
+#define NOMINMAX 1
+
+//  override byte to prevent clashes with <cstddef>
+#define byte win_byte_override
+
+#include <Windows.h> // gdi plus requires Windows.h
+// ...includes for other windows header that may use byte...
+
+//  Undefine byte macros so it won't collide with <cstddef> header content.
+#undef byte
 
 INPUT CreateInput(DWORD type) {
 	INPUT input;
