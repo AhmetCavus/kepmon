@@ -2,9 +2,17 @@
 
 Kepmon is a [napi module](https://www.npmjs.com/package/node-addon-api) providing pointer access and control.
 
-In the earliest version only the Windows platfrom is currently supported! But you can also try it on Linux and macOS. 
+In the earliest version Windows and Linux OS is supported! But you can also try it on macOS. 
 
 ## Getting Started
+
+### Linux
+
+In order to use the library in Ubuntu (maybe other variations can also work but it's not tested) you've to install
+
+```
+sudo apt-get install libx11-dev libxtst-dev
+```
 
 ### Usage
 
