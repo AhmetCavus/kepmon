@@ -1,8 +1,19 @@
 {
   "name": "kepmon",
-  "version": "0.3.0",
+  "version": "0.3.6",
   "description": "A Napi library wich provides a control over the pointer",
   "main": "dist/src/index.js",
+  "files": [
+    "dist",
+    "src",
+    "binding.gyp",
+    "cpp",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "url": "https://github.com/AhmetCavus/kepmon"
+  },
   "contributors": [
     {
       "name": "Ahmet Cavus",
@@ -21,7 +32,7 @@
     "Left Click",
     "Right Click"
   ],
-  "author": "yapptek",
+  "author": "Ahmet Cavus",
   "license": "MIT",
   "scripts": {
     "build": "tsc"

@@ -1,0 +1,10 @@
+# Exclude the kepmon-executable directory
+kepmon-executable/
+
+# Exclude other files and directories as needed
+.vscode/
+node_modules/
+dist/
+build/
+*.log
+*.tgz
