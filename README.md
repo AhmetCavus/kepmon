@@ -2,14 +2,14 @@
 
 Kepmon is a [napi module](https://www.npmjs.com/package/node-addon-api) providing pointer access and control.
 
-In the earliest version only the Windows platfrom is currently supported!
+In the earliest version only the Windows platfrom is currently supported! But you can also try it on Linux and macOS. 
 
 ## Getting Started
 
 ### Usage
 
 ```nodejs
-import kepmon from ("kepmon")
+import kepmon from "kepmon"
 
 const position = kepmon.getPointerPosition()
 const boundary = kepmon.getPointerBoundary()
@@ -20,6 +20,8 @@ kepmon.setPointerPosition(newXPos, position.y)
 For more information check the [keepMeOnScript.ts](./src/keepMeOnScript.ts).
 
 ### Extending the library
+
+In order to extend the system operations you've to do following steps:
 
 First of all you've to install node-gyp.
 

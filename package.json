@@ -1,7 +1,7 @@
 {
   "name": "kepmon",
-  "version": "0.3.6",
-  "description": "A Napi library wich provides a control over the pointer",
+  "version": "0.4.0",
+  "description": "A Napi library wich provides mouse movement and click events",
   "main": "dist/src/index.js",
   "files": [
     "dist",
@@ -30,7 +30,11 @@
     "Cursor",
     "Pointer",
     "Left Click",
-    "Right Click"
+    "Right Click",
+    "Double Click",
+    "Drag",
+    "Drop",
+    "Scroll"
   ],
   "author": "Ahmet Cavus",
   "license": "MIT",
